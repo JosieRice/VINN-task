@@ -2,8 +2,10 @@
     "compilerOptions": {
         "paths": {
             "icons/*": ["./src/assets/icons/*"],
+            "router/*": ["./src/router/*"],
             "routes/*": ["./src/routes/*"],
-            "jestTestUtils": ["./src/testing/jestTestUtils"]
+            "jestTestUtils": ["./src/testing/jestTestUtils"],
+            "ui-library/*": ["./src/ui-library/*"]
         },
         "target": "es5",
         "lib": [

@@ -48,6 +48,8 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@mui/material": "^5.5.3",
+    "@mui/styled-engine-sc": "^5.5.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",

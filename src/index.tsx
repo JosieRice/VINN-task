@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import init from './init';
-import Router from './Router';
+import Router from 'router/Index';
 
 /** everything that should be initialized globally on load goes here */
 init();

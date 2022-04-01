@@ -59,8 +59,12 @@ const config = {
          * must have matching paths rules in tsconfig.json for Typescript to not complain
          */
         alias: {
+            /** required for MUI to work with styled-components */
+            '@mui/styled-engine': '@mui/styled-engine-sc',
             icons: path.resolve(__dirname, 'src/assets/icons'),
+            router: path.resolve(__dirname, 'src/router'),
             routes: path.resolve(__dirname, 'src/routes'),
+            ['ui-library']: path.resolve(__dirname, 'src/ui-library'),
         },
     },
     module: {
