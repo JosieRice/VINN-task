@@ -5,7 +5,8 @@
             "router/*": ["./src/router/*"],
             "routes/*": ["./src/routes/*"],
             "jestTestUtils": ["./src/testing/jestTestUtils"],
-            "ui-library/*": ["./src/ui-library/*"]
+            "ui-library/*": ["./src/ui-library/*"],
+            "utils/*": ["./src/utils/*"]
         },
         "target": "es5",
         "lib": [

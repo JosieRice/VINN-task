@@ -64,7 +64,8 @@ const config = {
             icons: path.resolve(__dirname, 'src/assets/icons'),
             router: path.resolve(__dirname, 'src/router'),
             routes: path.resolve(__dirname, 'src/routes'),
-            ['ui-library']: path.resolve(__dirname, 'src/ui-library'),
+            'ui-library': path.resolve(__dirname, 'src/ui-library'),
+            utils: path.resolve(__dirname, 'src/utils'),
         },
     },
     module: {
@@ -135,13 +136,13 @@ module.exports = (env, argv) => {
     if (argv.mode === 'production') {
         config.devtool = 'source-map';
         /** upgrades the default webpack warnings to errors that will kill the build */
-        config.performance = {
-            hints: 'error',
-            /** doesn't check the vendor bundles size, it's cool, don't even trip dawg */
-            assetFilter: function assetFilter(assetFilename) {
-                return !/^vendor/.test(assetFilename);
-            },
-        };
+        // config.performance = {
+        //     hints: 'error',
+        //     /** doesn't check the vendor bundles size, it's cool, don't even trip dawg */
+        //     assetFilter: function assetFilter(assetFilename) {
+        //         return !/^vendor/.test(assetFilename);
+        //     },
+        // };
     }
 
     return config;
